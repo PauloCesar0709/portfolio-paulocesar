@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #1A1A1C;
+  --color-sidebar: #ODODOF;
+  --color-card: #232327;
+  --color-chip: #2C2C33;
+  --color-line: #2E2E34; 
+  --color-muted: #9A9AA3;
+  --color-accent: #7C7CF0;
+  --color-accent-soft: #2A2A55;
+  --color-green: #4EC9A0;
+  --color-blue: #3B8EBF;
+  --color-yellow: #D4A843;
+
+  /* Fontes usadas */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Outfit", system-ui, sans-serif;
+
+  /* Cor dos ícones do Macbook */
+  --color-mac-red: #FF5F57;
+  --color-mac-yellow: #FEBC2E;
+  --color-mac-green: #28C840;
+}
+
+body {
+  background-color: var(--color-base);
+  color: #F2F2F4;
+  font-family: var(--font-sans);
+} 
