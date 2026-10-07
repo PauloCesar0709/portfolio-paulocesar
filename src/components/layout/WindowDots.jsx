@@ -1,8 +1,12 @@
+import { useI18n } from "../../i18n/useI18n";
+
 export default function WindowDots({onClose, onMinimize, onExpand}){
+    const { t } = useI18n();
+
     const dots = [
-        {label: "Fechar", color: "bg-mac-red", symbol: "×", onClick: onClose},
-        {label: "Minimizar", color: "bg-mac-yellow", symbol: "-", onClick: onMinimize},
-        {label: "Tela Cheia", color: "bg-mac-green", symbol: "+", onClick: onExpand}
+        {label: t("window.close"), color: "bg-mac-red", symbol: "×", onClick: onClose},
+        {label: t("window.minimize"), color: "bg-mac-yellow", symbol: "-", onClick: onMinimize},
+        {label: t("window.fullscreen"), color: "bg-mac-green", symbol: "⤡", onClick: onExpand}
     ];
     return (
         <div className="group flex items-center gap-2">

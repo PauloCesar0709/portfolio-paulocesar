@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import { useI18n } from "../../i18n/useI18n";
 
 function toggleFullscreen() {
     if (document.fullscreenElement){
@@ -11,6 +12,7 @@ function toggleFullscreen() {
 }
 
 export default function AppShell(){
+    const { t } = useI18n();
     const [sidebar, setSidebar] = useState("open");
 
     const closed = sidebar === "closed";
@@ -40,7 +42,7 @@ export default function AppShell(){
                     className="fixed left-4 top-4 rounded-md border border-line bg-card px-3 py-2 font-mono text-xs text-muted hover:text-white"
                 >
 
-                    Abrir explorador
+                    {t("shell.openExplorer")}
                 </button>
             )}
         </div>

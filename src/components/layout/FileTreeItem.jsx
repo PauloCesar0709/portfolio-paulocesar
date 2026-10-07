@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useI18n } from "../../i18n/useI18n";
 import { 
     Folder,
     FolderOpen,
@@ -13,16 +14,19 @@ const kinds = {
     jsx: { Icon: FileCode, color: "text-blue" },
     js: { Icon: FileCode, color: "text-yellow" },
     py: { Icon: FileCode, color: "text-green" },
+    java: {Icon: FileCode, color: "text-orange"},
     md: { Icon: FileText, color: "text-muted" },
-    pdf: { Icon: FileText, color: "text-accent" },
+    pdf: { Icon: FileText, color: "text-red" },
     json: { Icon: FileJson, color: "text-yellow" },
 };
 
 export default function FileTreeItem({item, depth = 0}){
+    const { t } = useI18n();
     const [open, setOpen] = useState(item.defaultOpen ?? false);
 
     // Pasta
     if (item.type === "folder"){
+        const label = t(`folders.${item.id}`);
         return (
             <div>
                 <button
@@ -43,7 +47,7 @@ export default function FileTreeItem({item, depth = 0}){
                     ) : (
                         <Folder size={16} className="shrink-0 text-accent" />
                     )}
-                    {item.name}
+                    {label}
                 </button>
 
                 <div
@@ -53,7 +57,7 @@ export default function FileTreeItem({item, depth = 0}){
                 >
                     <div className="overflow-hidden">
                         {item.children.map((child) => (
-                            <FileTreeItem key={child.name} item={child} depth={depth + 1} />
+                            <FileTreeItem key={child.id} item={child} depth={depth + 1} />
                         ))}
                     </div>
                 </div>
@@ -62,7 +66,8 @@ export default function FileTreeItem({item, depth = 0}){
     }
 
     // Arquivo
-    const {Icon, color} = kinds[item.name.split(".").pop()] ?? kinds.md;
+    const label = `${t(`files.${item.id}`)}.${item.ext}`;
+    const { Icon, color } = kinds[item.ext] ?? kinds.md;
 
     return(
         <NavLink
@@ -73,7 +78,7 @@ export default function FileTreeItem({item, depth = 0}){
                 `flex items-center gap-2 rounded-md py-1.5 pr-3 ${isActive ? "bg-card text-white" : "text-muted hover:bg-white/5 hover:text-white"}`}
         >
             <Icon size={16} className={`shrink-0 ${color}`} />
-            {item.name}
+            {label}
         </NavLink>
     );
 }

@@ -2,7 +2,7 @@
 
 @theme {
   --color-base: #1A1A1C;
-  --color-sidebar: #ODODOF;
+  --color-sidebar: #0D0D0F;
   --color-card: #232327;
   --color-chip: #2C2C33;
   --color-line: #2E2E34; 
@@ -12,11 +12,13 @@
   --color-green: #4EC9A0;
   --color-blue: #3B8EBF;
   --color-yellow: #D4A843;
+  --color-red: #FF0000;
+  --color-orange: #FF5733;
 
   /* Fontes usadas */
   --font-display: "Bebas Neue", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
   --font-sans: "Outfit", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   /* Cor dos ícones do Macbook */
   --color-mac-red: #FF5F57;
@@ -29,3 +31,21 @@ body {
   color: #F2F2F4;
   font-family: var(--font-sans);
 } 
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  background: currentColor;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .cursor {animation: none;}
+}
