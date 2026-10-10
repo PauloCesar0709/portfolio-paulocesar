@@ -1,3 +1,5 @@
+import { href } from "react-router-dom";
+
 export const files = [
     { type: "file", id: "home", ext: "jsx", href: "/" },
     {
@@ -16,6 +18,7 @@ export const files = [
                     { type: "file", id: "project2", ext: "java", href: "/projetos" },
                 ],
             },
+            { type: "file", id: "stats", ext: "md", href: "/estatisticas"},
             { type: "file", id: "resume", ext: "pdf", href: "/curriculo" },
             { type: "file", id: "contact", ext: "js", href: "/contato" },
         ],

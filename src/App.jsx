@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Stack from "./pages/Stack";
 import Projetos from "./pages/Projetos";
+import Estatisticas from "./pages/Estatisticas";
 import Curriculo from "./pages/Curriculo";
 import Contato from "./pages/Contato";
 
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="linguagens" element={<Stack />} />
         <Route path="projetos" element={<Projetos />} />
         <Route path="curriculo" element={<Curriculo />} />
+        <Route path="estatisticas" element={<Estatisticas/>} />
         <Route path="contato" element={<Contato />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
