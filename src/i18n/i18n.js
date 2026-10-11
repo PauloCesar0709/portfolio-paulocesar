@@ -79,6 +79,11 @@ export const translations = {
             },
         },
 
+        stack: {
+            title: "Stack",
+            orbitLabel: "Tecnologias e Ferramentas",
+        },
+
         projects: {
 
         },
@@ -156,6 +161,11 @@ export const translations = {
                     media: ["Supernatural", "The Flash", "The Mentalist", "Titãs", "Teen Beach Movie", "Harry Potter", "House of wax", "Panic"],
                 },
             },
+        },
+
+        stack: {
+            title: "Stack",
+            orbitLabel: "Technologies and Tools",
         },
 
         projects: {

@@ -20,7 +20,7 @@ export const files = [
             },
             { type: "file", id: "stats", ext: "md", href: "/estatisticas"},
             { type: "file", id: "resume", ext: "pdf", href: "/curriculo" },
-            { type: "file", id: "contact", ext: "js", href: "/contato" },
+            { type: "file", id: "contact", ext: "json", href: "/contato" },
         ],
     },
 ];

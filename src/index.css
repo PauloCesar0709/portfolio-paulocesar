@@ -10,11 +10,13 @@
   --color-accent: #7C7CF0;
   --color-accent-soft: #2A2A55;
   --color-green: #4EC9A0;
-  --color-blue: #3B8EBF;
-  --color-yellow: #D4A843;
-  --color-red: #FF0000;
-  --color-orange: #FF5733;
+  --color-white: #FFFFFF;
+  --color-jsx-blue: #61DAFB;
+  --color-py-blue: #3776AB;
+  --color-json-yellow: #F7DF1E;
+  --color-pdf-red: #FF0000;
   --color-accent-text: #B8B8FF;
+  --color-green-soft: #14352B;
 
   /* Fontes usadas */
   --font-display: "Bebas Neue", sans-serif;
@@ -49,4 +51,36 @@ body {
 
 @media (prefers-reduced-motion: reduce){
   .cursor {animation: none;}
+}
+
+.orbit-system {
+  /* tamanho de cada ícone: 9% da largura do sistema, entre 30px e 72px */
+  --item: clamp(28px, 7.5cqw, 70px);
+}
+
+.orbit-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--item);
+  height: var(--item);
+  margin: calc(var(--item) / -2) 0 0 calc(var(--item) / -2);
+  animation: orbit var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(calc(var(--k) * 100cqw)) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(calc(var(--k) * 100cqw)) rotate(-360deg); }
+}
+
+.orbit-system:hover .orbit-item {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-item {
+    animation: none;
+    transform: rotate(var(--angle)) translateX(calc(var(--k) * 100cqw)) rotate(calc(var(--angle) * -1));
+  }
 }

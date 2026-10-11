@@ -3,21 +3,22 @@ import { NavLink } from "react-router-dom";
 import { useI18n } from "../../i18n/useI18n";
 import { 
     Folder,
-    FolderOpen,
     FileCode,
-    FileText,
-    FileJson,
+    FolderOpen,
     ChevronRight,
  } from "lucide-react";
 
+ import {
+    SiReact, SiPython, SiMarkdown, SiJson, SiIlovepdf, SiOpenjdk,
+} from "@icons-pack/react-simple-icons"
+
 const kinds = {
-    jsx: { Icon: FileCode, color: "text-blue" },
-    js: { Icon: FileCode, color: "text-yellow" },
-    py: { Icon: FileCode, color: "text-green" },
-    java: {Icon: FileCode, color: "text-orange"},
-    md: { Icon: FileText, color: "text-muted" },
-    pdf: { Icon: FileText, color: "text-red" },
-    json: { Icon: FileJson, color: "text-yellow" },
+    jsx: { Icon: SiReact, color: "text-jsx-blue" },
+    json: { Icon: SiJson, color: "text-json-yellow" },
+    py: { Icon: SiPython, color: "text-py-blue" },
+    java: {Icon: SiOpenjdk, color: "text-white"},
+    md: { Icon: SiMarkdown, color: "text-white" },
+    pdf: { Icon: SiIlovepdf, color: "text-pdf-red" },
 };
 
 export default function FileTreeItem({item, depth = 0}){
