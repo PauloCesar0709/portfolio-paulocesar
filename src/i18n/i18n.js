@@ -85,7 +85,19 @@ export const translations = {
         },
 
         projects: {
-
+            title: "Projetos",
+            commentDescription: "// descrição",
+            commentStack: "// linguagens",
+            githubLabel: "Código de {{name}} no GitHub",
+            imageAlt: "Captura de tela do projeto {{name}}",
+            items: {
+                champions: {
+                    description: "Jogo de luta local para dois jogadores em que cada participante controla um personagem dentro de uma arena. O objetivo é derrotar o adversário reduzindo sua barra de vida a zero por meio de ataques e movimentação estratégica.",
+                },
+                radio: {
+                    description: "Projeto que consome a Radio Browser API para exibir estações de rádio, permitindo filtrar por capitais, marcar estações como favoritas e ouvi-las diretamente pelo navegador.",
+                },
+            },
         },
     },
 
@@ -169,7 +181,19 @@ export const translations = {
         },
 
         projects: {
-
+            title: "Projects",
+            commentDescription: "// description",
+            commentStack: "// stack",
+            githubLabel: "Code for {{name}} on GitHub",
+            imageAlt: "Screenshot of the {{name}} project",
+            items: {
+                champions: {
+                    description: "A local two-player fighting game in which each player controls a character inside an arena. The goal is to defeat the opponent by reducing their health bar to zero through attacks and strategic movement.",
+                },
+                radio: {
+                    description: "A project that consumes the Radio Browser API to display radio stations, letting users filter by capital cities, mark stations as favorites and listen to them directly in the browser.",
+                },
+            },
         },
     },
 };
