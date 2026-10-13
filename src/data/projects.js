@@ -13,7 +13,7 @@ export const projects = [
         id: "radio",
         name: "Radio Browser API",
         file: "radioBrowserApi.java",
-        image: "",
+        image: "/projetos/radio.webp",
         repo: "https://github.com/PauloCesar0709/projects/tree/master/spring-boot/RadioBrowserAPI",
         stack: ["Java", "Spring Boot", "HTML", "CSS"],
     },

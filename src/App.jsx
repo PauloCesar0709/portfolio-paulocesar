@@ -28,7 +28,6 @@ export default function App() {
             </Suspense>
           } 
         />
-        <Route path="estatisticas" element={<Estatisticas/>} />
         <Route path="contato" element={<Contato />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
