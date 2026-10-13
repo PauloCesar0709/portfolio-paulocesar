@@ -11,7 +11,7 @@ export default function Sidebar({minimized, onClose, onMinimize, onExpand}){
         <aside className="flex flex-col gap-6 border-r border-line bg-sidebar p-4">
             {/* Perfil */}
             <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-full border-2 border-white bg-card" />
+                <img src={"/perfil/img-perfil.jpeg"}  className="h-12 w-12 rounded-full border-2 border-white bg-card" />
                 <div>
                     <p className="font-medium">Paulo César</p>
                     <p className="font-mono text-[11px] tracking-[0.25em] text-muted">

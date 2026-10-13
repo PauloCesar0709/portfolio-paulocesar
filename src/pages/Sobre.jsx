@@ -19,7 +19,7 @@ export default function Sobre() {
 
         <div className="flex flex-col items-center gap-8 md:flex-row">
           <ProfilePhoto
-            src={"/foto.jpg"}
+            src={"/perfil/img-perfil.jpeg"}
             alt={t("about.photoAlt")}
             initials={profile.initials}
           />
