@@ -5,7 +5,7 @@ export const projects = [
         id: "champions",
         name: "Champions of the PyArena",
         file: "championsOfThePyArena.py",
-        image: "",
+        image: "/projetos/champions.webp",
         repo: "https://github.com/PauloCesar0709/projects/tree/master/ChampionsPyArena",
         stack: ["Python"],
     },

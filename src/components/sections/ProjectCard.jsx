@@ -41,8 +41,8 @@ export default function ProjectCard({ project, delay = 0 }){
                             <img
                                 src={image}
                                 alt={t("projects.imageAlt", { name })}
-                                width={800}
-                                height={450}
+                                width={1000}
+                                height={1000}
                                 loading="lazy"
                                 decoding="async"
                                 onError={() => setImgFailed(true)}

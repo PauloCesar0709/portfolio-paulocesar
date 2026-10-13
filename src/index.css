@@ -84,3 +84,16 @@ body {
     transform: rotate(var(--angle)) translateX(calc(var(--k) * 100cqw)) rotate(calc(var(--angle) * -1));
   }
 }
+
+@keyframes resume-fade {
+  from { opacity: 0; transform: translate(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.resume-fade {
+  animation: resume-fade 0.45s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-fade { animation: none; }
+}
