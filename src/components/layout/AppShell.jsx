@@ -53,7 +53,7 @@ export default function AppShell(){
 
     return (
         <div
-            className={`flex h-dvh flex-col md:grid ${closed ? "md:grid-cols-1" : "md:grid-cols-[280px_1fr]"}`}
+            className={`flex h-dvh flex-col md:grid ${closed ? "md:grid-cols-1" : "md:grid-cols-[360px_1fr]"}`}
         >
             <div
                 aria-hidden="true"
