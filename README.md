@@ -194,7 +194,7 @@ VITE_EMAILJS_PUBLIC_KEY
 ```text
 .
 ├── docs/                         # 📚 Documentação do projeto.
-│   ├── prototype/                # 🎨 Telas do protótipo do Figma.
+│   ├── prototipo/                # 🎨 Telas do protótipo do Figma.
 │   └── images/                   # 🖼️ Imagens usadas neste README.
 │
 ├── public/                       # 🌐 Arquivos públicos servidos diretamente.
