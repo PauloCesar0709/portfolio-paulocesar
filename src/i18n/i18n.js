@@ -14,6 +14,8 @@ export const translations = {
             explorerLabel: "Explorador de Arquivos",
             openExplorer: "Abrir explorador",
             language: "Idioma",
+            openMenu: "Abrir menu",
+            menuLabel: "Menu de navegação",
         },
 
         window: {
@@ -151,6 +153,8 @@ export const translations = {
             explorerLabel: "File Explorer",
             openExplorer: "Open explorer",
             language: "Language",
+            openMenu: "Open menu",
+            menuLabel: "Navigation menu",
         },
 
         window: {

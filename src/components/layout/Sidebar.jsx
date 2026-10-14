@@ -4,11 +4,11 @@ import { files } from "../../data/files";
 import { useI18n } from "../../i18n/useI18n";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Sidebar({minimized, onClose, onMinimize, onExpand}){
+export default function Sidebar({minimized, onClose, onMinimize, onExpand, onNavigate}){
     const { t } = useI18n();
 
     return (
-        <aside className="flex flex-col gap-6 border-r border-line bg-sidebar p-4">
+        <aside className="flex h-full flex-col gap-6 overflow-y-auto border-r border-line bg-sidebar p-4">
             {/* Perfil */}
             <div className="flex items-center gap-3">
                 <img src={"/perfil/img-perfil.jpeg"}  className="h-12 w-12 rounded-full border-2 border-white bg-card" />
@@ -37,7 +37,7 @@ export default function Sidebar({minimized, onClose, onMinimize, onExpand}){
                     <nav className="overflow-hidden" aria-label={t("shell.explorerLabel")}>
                         <div className="border-t border-line p-2 font-mono text-sm">
                             {files.map((item) => (
-                                <FileTreeItem key={item.id} item={item}/>
+                                <FileTreeItem key={item.id} item={item} onNavigate={onNavigate}/>
                             ))}
                         </div>
                     </nav>

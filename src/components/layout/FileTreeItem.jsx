@@ -21,7 +21,7 @@ const kinds = {
     pdf: { Icon: SiIlovepdf, color: "text-pdf-red" },
 };
 
-export default function FileTreeItem({item, depth = 0}){
+export default function FileTreeItem({item, depth = 0, onNavigate}){
     const { t } = useI18n();
     const [open, setOpen] = useState(item.defaultOpen ?? false);
 
@@ -58,7 +58,7 @@ export default function FileTreeItem({item, depth = 0}){
                 >
                     <div className="overflow-hidden">
                         {item.children.map((child) => (
-                            <FileTreeItem key={child.id} item={child} depth={depth + 1} />
+                            <FileTreeItem key={child.id} item={child} depth={depth + 1} onNavigate={onNavigate} />
                         ))}
                     </div>
                 </div>
@@ -73,6 +73,7 @@ export default function FileTreeItem({item, depth = 0}){
     return(
         <NavLink
             to={item.href}
+            onClick={onNavigate}
             end={item.href === "/"}
             style={{ paddingLeft: 12 + depth * 16 + 22 }}
             className={({ isActive }) =>

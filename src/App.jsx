@@ -5,8 +5,6 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Stack from "./pages/Stack";
 import Projetos from "./pages/Projetos";
-import Estatisticas from "./pages/Estatisticas";
-import Curriculo from "./pages/Curriculo";
 import Contato from "./pages/Contato";
 
 export default function App() {
