@@ -9,7 +9,7 @@
     </td>
     <td width="150" align="center">
       <div>
-        <img src="" alt="Logo da Eng. Software" width="120"/>
+        <img src="docs/images/logo_ES_vertical.png" alt="Logo da Eng. Software" width="120"/>
       </div>
     </td>
   </tr>
@@ -33,6 +33,7 @@
 - [Deploy](#-deploy)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Protótipos](#-protótipos)
+- [Demonstração](#-demonstração)
 - [Documentações utilizadas](#-documentações-utilizadas)
 - [Agradecimentos](#-agradecimentos)
 - [Licença](#-licença)
@@ -222,6 +223,52 @@ VITE_EMAILJS_PUBLIC_KEY
 ├── jsconfig.json                 # ⚙️ Configuração geral do JavaScript.
 └── vite.config.ts                # ⚡ Configuração do Vite.
 ```
+---
+
+## 🎨 Protótipos
+
+| Página Inicial | Página Sobre |
+|----------------|----------------|
+| <img src="docs/prototipo/prototipo-home.png" alt="Demonstração 1" height="400"> | <img src="docs/prototipo/prototipo-sobre.png" alt="Demonstração 2" height="400"> |
+
+| Página Stack | Página Projetos |
+|----------------|----------------|
+| <img src="docs/prototipo/prototipo-stack.png" alt="Demonstração 3" height="400"> | <img src="docs/prototipo/prototipo-projetos.png" alt="Demonstração 4" height="400"> |
+
+| Página Curriculo | Página Contato |
+|----------------|----------------|
+| <img src="docs/prototipo/prototipo-curriculo.png" alt="Demonstração 5" height="400"> | <img src="docs/prototipo/prototipo-contato.png" alt="Demonstração 6" height="400"> |
+
+---
+
+## 🎥 Demonstração
+
+| Página Inicial |
+|----------------|
+| <img src="docs/images/home.png" alt="home" height="400"> |
+
+| Página Sobre |
+|-----------------------------|
+| <img src="docs/images/sobre.png" alt="sobre" height="400"> |
+
+| Página Stack |
+|----------------|
+| <img src="docs/images/stack.png" alt="stack" height="400"> |
+
+| Página Projetos |
+|----------------|
+| <img src="docs/images/projetos.png" alt="projetos" height="400"> |
+
+| Página Currículo |
+|-----------------------------|
+| <img src="docs/images/curriculo.png" alt="curriculo" height="400"> |
+
+
+| Página Contato |
+|-----------------------------|
+| <img src="docs/images/contato.png" alt="contato" height="400"> |
+
+
 ---
 
 ## 🔗 Documentações utilizadas
